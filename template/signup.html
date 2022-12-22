@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django Form Tutorial</title>
+</head>
+<body>
+    <PRE><center>
+        <h1>Registration Form</h1>
+        <h2>{{ html }}</h2>
+        <form action = '' method="POST">
+            <!-- Very Important csrf Token -->
+            {% csrf_token %}
+        <table>
+            {{ form.as_p }}
+        </table>
+        <input type="submit" name="Register Now">
+    </form>
+    </center></PRE>
+</body>
+</html>
